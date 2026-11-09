@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Первая встреча — Омск</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="veil" id="veil">
+    <div>
+      <div class="intro">
+        <p class="eyebrow">Омск · ноябрь</p>
+        <h1>Первая встреча</h1>
+        <p>Письмо, из которого можно собрать тихий вечер.</p>
+      </div>
+      <div class="envelope">
+        <div class="flap"></div>
+        <button class="seal" id="open" type="button">
+          <span>Р</span>
+          <small>Открыть письмо</small>
+        </button>
+        <p class="hint">Нажми на печать</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="page">
+    <article class="letter wrap">
+      <p class="eyebrow">для тебя</p>
+      <h2>Тебе</h2>
+      <p>Хочу увидеть тебя в эти дни. Ноябрь в Омске тихий и в пальто: днём чуть выше нуля, к ночи уже щиплет, а в центре тепло.</p>
+      <p>Выбери день, час, место и одежду. И один маленький жест, если захочешь. Если дни не те — просто напиши.</p>
+      <p>Приду чуть раньше и спрячу телефон. Дальше пусть вечер сам будет живым.</p>
+      <p class="sign">Руслан</p>
+    </article>
+
+    <div class="wrap layout">
+      <div>
+        <section class="panel">
+          <h2>Дата</h2>
+          <p class="lead">Лучше всего суббота и воскресенье: город сам настраивает на встречу. Четверг и пятница — если захочется тише.</p>
+          <div class="choices dates" id="dates"></div>
+        </section>
+        <section class="panel">
+          <h2>Час</h2>
+          <p class="lead">День, после полудня или уже вечер. Бери то время, когда тебе светлее.</p>
+          <div class="choices times" id="times"></div>
+        </section>
+        <section class="panel">
+          <h2>Место</h2>
+          <p class="lead">Четыре места в центре, все разные. Бери то, куда тянет.</p>
+          <div class="places" id="places"></div>
+        </section>
+        <section class="panel">
+          <h2>Одежда</h2>
+          <p class="lead">Один стиль на двоих. Слева пример для меня, справа — для тебя. Ноябрь всё равно просит пальто.</p>
+          <div class="styles" id="looks"></div>
+        </section>
+        <section class="panel">
+          <h2>Маленький жест</h2>
+          <p class="lead">Одна деталь, которая греет и ничего не требует взамен.</p>
+          <div class="gestures" id="gestures"></div>
+        </section>
+        <section class="guide">
+          <h2>Чтобы вечер был живым</h2>
+          <ul>
+            <li>Людное место и своя дорога домой. Адрес и время можно заранее отправить подруге.</li>
+            <li>Напиток остаётся на виду. Отошла — проще взять новый, чем допивать оставленный.</li>
+            <li>Телефон лежит в кармане. Разговор держится взглядом и паузами, они в ноябре особенно уместны.</li>
+            <li>Один точный комплимент теплее длинной речи. Хорошо звучит то, что она выбрала сама: шарф, ход мысли, смех.</li>
+            <li>В кофейне спокойно, когда каждый платит за своё. Если соберёмся ужинать, стол на мне, без сцены со счётом.</li>
+            <li>Домой и в машину «просто подвезу» в первый вечер не зову. Свет улицы нам пока полезнее.</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="card-side" id="card">
+        <p class="eyebrow">собранный вечер</p>
+        <h3>Пока пусто</h3>
+        <p class="note" id="card-lead">Выбери дату, час, место, одежду и жест. Карточка сложится сама.</p>
+        <div class="summary" id="summary"></div>
+        <div id="map-slot"></div>
+        <div class="actions">
+          <button class="primary" id="copy" type="button">Скопировать приглашение</button>
+          <button id="reset" type="button">Собрать заново</button>
+        </div>
+        <p class="note">Выбор сохранится в этом браузере на этом компьютере.</p>
+      </aside>
+    </div>
+    <footer class="wrap">
+      <p>Сыроварня: ул. Гагарина, 36, ежедневно 11:00–23:59, +7 (3812) 30-80-40, фото фасада и зала с сайта syrovarnya.com. Skuratov Coffee: ул. Ленина, 13А, 06:55–23:05, фото зала со страницы сети в Омске. Музей им. Врубеля: ул. Ленина, 3, фото корпуса с vrubel.ru. Тобольские ворота: Wikimedia Commons, File:Тобольские ворота в Омске.jpg. Примеры одежды: Unsplash. Погода на 12–15 ноября 2026 — прогноз Open-Meteo на 5 ноября, он ещё может сдвинуться. О первой встрече опирался на советы психологов: людное место, короткий формат и возможность спокойно остаться.</p>
+    </footer>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
